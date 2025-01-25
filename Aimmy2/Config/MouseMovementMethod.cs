@@ -18,4 +18,7 @@ public enum MouseMovementMethod
 
     [Description("ddxoft Virtual Input Driver")]
     ddxoft,
+
+    [Description("Arduino Support")]
+    arduino,
 }

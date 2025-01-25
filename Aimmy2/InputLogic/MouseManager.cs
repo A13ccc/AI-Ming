@@ -5,6 +5,7 @@ using Aimmy2.MouseMovementLibraries.GHubSupport;
 using MouseMovementLibraries.ddxoftSupport;
 using MouseMovementLibraries.RazerSupport;
 using MouseMovementLibraries.SendInputSupport;
+using MouseMovementLibraries.ArduinoSupport;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Windows.Input;
@@ -29,6 +30,8 @@ namespace InputLogic
 
 
         private static Random MouseRandom = new();
+
+        public static ArduinoInput arduinoMouse = new();
 
         private static Point CubicBezier(Point start, Point end, Point control1, Point control2, double t)
         {
@@ -174,6 +177,10 @@ namespace InputLogic
 
                 case MouseMovementMethod.ddxoft:
                     DdxoftMain.ddxoftInstance.btn!(1);
+                    return;
+
+                case MouseMovementMethod.arduino:
+                    arduinoMouse.SendMouseCommand(0, 0, 1);
                     return;
 
                 default:
@@ -345,6 +352,10 @@ namespace InputLogic
                 case MouseMovementMethod.ddxoft:
                     DdxoftMain.ddxoftInstance.movR!(newPosition.X, newPosition.Y);
                     break;
+
+                case MouseMovementMethod.arduino:
+                    arduinoMouse.SendMouseCommand(newPosition.X, newPosition.Y, 0);
+                    return;
 
                 default:
                     NativeAPIMethods.MouseEvent((uint)InputEventFlags.MOUSEEVENTF_MOVE, (uint)newPosition.X, (uint)newPosition.Y, 0, 0);

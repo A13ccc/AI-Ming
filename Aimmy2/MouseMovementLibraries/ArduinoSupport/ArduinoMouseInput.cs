@@ -71,5 +71,13 @@ namespace MouseMovementLibraries.ArduinoSupport
                 serialPort.Close();
             }
         }
+
+        public void Open()
+        {
+            if (!serialPort.IsOpen)
+            {
+                serialPort.Open();
+            }
+        }
     }
 }
