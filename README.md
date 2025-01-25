@@ -7,12 +7,11 @@
   </p>
 
 > [!NOTE]
-> Use Seconb's arduino setup script, I'll include it here soon once I get permission. For now, here's a url.
-  <p>
-    <a href="https://github.com/Seconb/Aimmy-Arduino-Edition/tree/c596c14cc52ae5d95cfbe29120c3955bdf369a85/Arduino%20Setup  target="_blank">
-      GitHub
-    </a>
-  </p>
+> Use Seconb's arduino setup script, I'll include it here soon once I get permission. For now, here's a link. <p><a href="https://github.com/Seconb/Aimmy-Arduino-Edition/tree/c596c14cc52ae5d95cfbe29120c3955bdf369a85/Arduino%20Setup  target="_blank">GitHub</a></p>
+    
+      
+    
+  
 
 Aimmy is a universal AI-Based Aim Alignment Mechanism developed by BabyHamsta, MarsQQ & Taylor to make gaming more accessible for users who have difficulty aiming.
 
