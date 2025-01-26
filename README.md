@@ -11,7 +11,7 @@
       <img width="100%" src="https://raw.githubusercontent.com/Babyhamsta/Aimmy/master/readme_assets/AimmyV2Banner.png"></a>
   </p>
 
-Huge thanks to Seconb (Aimmy Arduino Support) and Fglide (This version of the Aimmy UI)
+Huge thanks to Seconb (Aimmy Arduino Support) and Fglide (This version of Aimmy)
 
 Aimmy is a universal AI-Based Aim Alignment Mechanism developed by BabyHamsta, MarsQQ & Taylor to make gaming more accessible for users who have difficulty aiming.
 
